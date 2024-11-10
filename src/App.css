@@ -1,0 +1,186 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  background-color: #e8eaf6;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #6c63ff;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.user-info {
+  text-align: right;
+  font-size: 14px;
+}
+
+/* Main Content Layout */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+/* Announcements Section */
+.announcements {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.announcements h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.announcement-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Quick Links Section */
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: #e8eaf6;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.quick-links h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.link-card {
+  width: 100%;
+  max-width: 350px;
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.link-card:hover {
+  transform: scale(1.05);
+}
+
+.canvas {
+  background-color: #3a3bb3;
+}
+
+.live-class {
+  background-color: #f06292;
+}
+
+.contact-teacher {
+  background-color: #3a3bb3;
+}
+
+/* Class Schedule Section */
+.class-schedule {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.class-schedule h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.schedule-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.schedule-card.active {
+  background-color: #f06292;
+  color: white;
+}
+
+/* Class Recordings Section */
+.class-recordings {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.class-recordings h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.filter-options {
+  margin-bottom: 10px;
+  color: #6c63ff;
+}
+
+.recording-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+

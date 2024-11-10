@@ -1,0 +1,227 @@
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f8;
+    color: #333;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header Styling */
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5a67d8;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header p {
+    margin: 5px 0 0;
+  }
+  
+  /* Main Container Layout */
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* Section Styling */
+  .section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .announcements-section {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .announcements-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .announcements-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .announcement-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .announcement-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .announcement-item p {
+    margin: 0;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  
+  .quick-links-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quick-links-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .quick-links-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .link-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .link-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .link-item h3 {
+    font-size: 1.3rem;
+    color: #007bff;
+  }
+  
+  .link-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .link-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  .link-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Class Schedule Section */
+  .class-schedule h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .schedule-item {
+    background-color: #f8f9fc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .schedule-item p {
+    margin: 5px 0;
+  }
+  
+  .schedule-item strong {
+    font-size: 1.1em;
+  }
+  
+  /* Class Recordings Section */
+  .class-recordings h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .class-recordings input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+  }
+  
+  .recording-item {
+    background-color: #f8f9fc;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .recording-item p {
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  .recording-item .date {
+    color: #555;
+    font-size: 0.9em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
